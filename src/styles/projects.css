@@ -1,0 +1,346 @@
+.projects-title {
+    text-align: center;
+    padding: 40px 20px 20px;
+    margin-bottom: 20px;
+}
+
+.projects-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+}
+
+.projects-title p {
+    color: #b8b8b8;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.projects-container {
+    background: rgba(34, 34, 34, 0.9);
+    border-radius: 20px;
+    width: 80vw;
+    max-width: 1000px;
+    padding: 30px;
+    margin: 0 auto 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    border-color: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.project-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.05);
+}
+
+.project-content {
+    padding: 20px;
+}
+
+.project-content h3 {
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.project-content p {
+    color: #b8b8b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tech span {
+    background: rgba(106, 17, 203, 0.2);
+    color: #b388ff;
+    align-content: center;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-tech p{
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    color: #b8b8b8;
+    margin-top: 1px;
+}
+
+.project-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.project-tools span {
+    background: rgba(5, 247, 37, 0.2);
+    color: #a4ff88;
+    align-content: center;
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-tools p{
+    margin-top: 10px;
+    width: auto;
+    height: auto;
+    color: #b8b8b8;
+    margin-top: 1px;
+}
+
+
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.project-links a {
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.demo-btn {
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+}
+
+.demo-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(37, 117, 252, 0.4);
+}
+
+.code-btn {
+    background: transparent;
+    color: #b388ff;
+    border: 1px solid rgba(179, 136, 255, 0.3);
+}
+
+.code-btn:hover {
+    background: rgba(179, 136, 255, 0.1);
+    border-color: rgba(179, 136, 255, 0.6);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .projects-container {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+    }
+    
+    .project-image {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title h2 {
+        font-size: 2rem;
+    }
+    
+    .projects-title p {
+        font-size: 1rem;
+    }
+    
+    .projects-container {
+        width: 95vw;
+        padding: 20px 15px;
+    }
+    
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .project-links a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* Estilos para el detalle del proyecto */
+.project-detail-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.back-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: #b388ff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+}
+
+.back-button:hover {
+    background: rgba(179, 136, 255, 0.2);
+}
+
+.project-detail-title {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.project-detail-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.project-detail-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.additional-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.additional-images img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.additional-images img:hover {
+    transform: scale(1.03);
+}
+
+.project-detail-info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.project-markdown {
+    line-height: 1.6;
+}
+
+.project-markdown h2 {
+    font-size: 1.5rem;
+    margin: 25px 0 15px;
+    color: #fff;
+}
+
+.project-markdown p {
+    margin-bottom: 15px;
+    color: #d1d1d1;
+}
+
+.project-detail-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.project-detail-links a{
+    padding:12px;
+    border-radius: 8px;
+}
+
+/* Responsive para detalle */
+@media (max-width: 900px) {
+    .project-detail-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .additional-images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .project-detail-title {
+        font-size: 2rem;
+    }
+    
+    .additional-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .project-detail-links {
+        flex-direction: column;
+    }
+}

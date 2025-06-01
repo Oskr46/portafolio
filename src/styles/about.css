@@ -1,0 +1,195 @@
+/* Estilos generales */
+:root {
+  --primary: #27195a;
+  --secondary: #3d278d;
+  --accent: #3a43bd;
+  --dark-bg: rgba(34, 34, 34, 0.9);
+  --light-text: #f0f0f0;
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.25s ease;
+}
+
+/* Contenedor principal */
+.about-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: var(--light-text);
+}
+
+/* Encabezado */
+.about-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-header .logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.about-header .logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(58, 67, 189, 0.3);
+}
+
+.language-prompt {
+  margin: 1rem 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Botones de idioma */
+.language-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.lang-btn {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 30px;
+  background: var(--secondary);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: var(--card-shadow);
+}
+
+.lang-btn:hover {
+  background: var(--accent);
+  transform: translateY(-2px);
+}
+
+.lang-btn.active {
+  background: var(--accent);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(58, 67, 189, 0.4);
+}
+
+/* Contenido "About Me" */
+.about-me-card {
+  background: var(--dark-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 1rem;
+  border-left: 4px solid var(--primary);
+  border-right: 4px solid var(--primary);
+  transition: var(--transition);
+  box-shadow: var(--card-shadow);
+}
+
+.about-me-card:hover {
+  box-shadow: 0 8px 20px rgba(58, 67, 189, 0.3);
+}
+
+/* Sección de perfil */
+.profile-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.profile-image img {
+  width: 200px;
+  height: 220px;
+  border-radius: 12px;
+  border: 3px solid var(--secondary);
+  object-fit: cover;
+  transition: var(--transition);
+  box-shadow: var(--card-shadow);
+}
+
+.profile-image img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(58, 67, 189, 0.4);
+}
+
+.profile-info h3 {
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--secondary);
+}
+
+/* Secciones de tecnología */
+.tech-section {
+  margin: 2rem 0;
+}
+
+.tech-section h3 {
+  color: var(--accent);
+  margin: 1.5rem 0 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--secondary);
+}
+
+/* Listas de tecnologías */
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1rem;
+  background: rgba(39, 25, 90, 0.3);
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.tech-item:hover {
+  background: rgba(58, 67, 189, 0.3);
+  transform: translateY(-3px);
+}
+
+.tech-item img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .profile-section {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .tech-list {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .language-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .lang-btn {
+    width: 80%;
+  }
+  
+  .tech-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .profile-image img {
+    width: 180px;
+    height: 200px;
+  }
+}

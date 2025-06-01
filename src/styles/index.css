@@ -1,0 +1,10 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+  background: radial-gradient(rgb(2, 0, 10),rgb(5, 0, 14),rgb(7, 0, 32));
+  background-size: contain;
+  margin-top: none;
+  --header-height:auto;
+  overflow-x: hidden;
+}

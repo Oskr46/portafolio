@@ -63,7 +63,7 @@ Error generating stack: `+a.message+`
                 -  Header Interactivo.
                 
                 Este Proyecto se realizó con ayuda de Git para manejo de versiones y compactar los cambios realizados por cada persona del grupo
-            `,images:["sigmarket-1.png","sigmarket-2.png","sigmarket-3.png","sigmarket-4.png"]},{id:3,title:"LectroMart",description:"Proyecto de una Tienda Online LectroMart de venta de productos electronicos.",technologies:["React","node.js","HTML","CSS"],tools:["React","Vite","Figma","Git","GitHub"],image:"lectromart-1.png",codeUrl:"https:/github.com/oskr46/tienda_online",content:`
+            `,images:["sigmarket-1.png","sigmarket-2.png","sigmarket-3.png","sigmarket-4.png"]},{id:3,title:"LectroMart",description:"Proyecto de una Tienda Online LectroMart de venta de productos electronicos.",technologies:["React JS","node.js","HTML","CSS"],tools:["React JS","Vite","Figma","Git","GitHub"],image:"lectromart-1.png",codeUrl:"https:/github.com/oskr46/tienda_online",content:`
                 Desarrollo de una tienda online "LectroMart" que cuenta con las siguientes
                 funcionalidades:
                 - Inicio de sesion para los empleados registrados.
@@ -73,7 +73,7 @@ Error generating stack: `+a.message+`
                 - Creacion de PDF con los Productos o Usuarios registrados.
 
                 Este Proyecto se realizó con ayuda de Git para manejo de versiones
-            `,images:["lectromart-1.png","lectromart-2.png","lectromart-3.png","lectromart-4.png","lectromart-5.png"]},{id:4,title:"Portafolios Digital",description:"Desarrollo de un Portafolios Digital para exhibir los logros durante mi carrera",technologies:["React JS","HTML","CSS"],tools:["React","Vite","Figma","Git","GitHub","GitHub Pages"],image:"portafolios-1.png",codeUrl:"https:/github.com/oskr46/portafolio",content:`
+            `,images:["lectromart-1.png","lectromart-2.png","lectromart-3.png","lectromart-4.png","lectromart-5.png"]},{id:4,title:"Portafolios Digital",description:"Desarrollo de un Portafolios Digital para exhibir los logros durante mi carrera",technologies:["React JS","HTML","CSS"],tools:["React JS","Vite","Figma","Git","GitHub","GitHub Pages"],image:"portafolios-1.png",codeUrl:"https:/github.com/oskr46/portafolio",content:`
                 Desarrollo de un Portafolios Digital donde se reflejaran mis logros y experiencia a traves de los años ejerciendo mi carrera
                 este portafolios debe contener:
                 - Menú de inicio interactivo con animaciones e información personal.

@@ -16,7 +16,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <div className='project-card'>
             <div className="project-image">
                 <img 
-                    src={`../../src/assets/resources/${project.image}`} 
+                    src={`resources/${project.image}`} 
                     alt={`${project.title} screenshot`} 
                 />
             </div>

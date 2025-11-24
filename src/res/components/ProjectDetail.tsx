@@ -29,7 +29,7 @@ function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                 <div className="project-detail-images">
                     <div className="main-image">
                         <img 
-                            src={`../../src/assets/resources/${project.image}`} 
+                            src={`resources/${project.image}`} 
                             alt={project.title} 
                         />
                     </div>
@@ -39,7 +39,7 @@ function ProjectDetail({ project, onBack }: ProjectDetailProps) {
                             {project.images.map((img, index) => (
                                 <img 
                                     key={index}
-                                    src={`../../src/assets/resources/${img}`} 
+                                    src={`resources/${img}`} 
                                     alt={`${project.title} ${index + 1}`} 
                                 />
                             ))}

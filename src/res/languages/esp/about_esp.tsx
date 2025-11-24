@@ -21,13 +21,13 @@ function About_Esp() {
         <div className='about-me-card'>
             <div className="profile-section">
                 <div className="profile-image">
-                    <img src="../src/assets/me.jpg" alt="Oscar Rojas" />
+                    <img src="assets/me.jpg" alt="Oscar Rojas" />
                 </div>
                 <div className="profile-info">
                     <h3>Datos sobre mí</h3>
                     <p>
                         Mi nombre es Oscar Rojas. Tengo 20 años y soy de Venezuela. Actualmente estoy estudiando 
-                        Ingeniería en Informática en la Universidad Gran Mariscal de Ayacucho, donde curso mi 6to semestre.
+                        Ingeniería en Informática en la Universidad Gran Mariscal de Ayacucho, donde curso mi 7mo semestre.
                     </p>
                     <p>
                         A lo largo de mi trayectoria académica, he trabajado en diversos proyectos para asignaturas 
@@ -47,7 +47,7 @@ function About_Esp() {
                     {tecnologias.map((tech, index) => (
                         <div key={index} className="tech-item">
                             <img 
-                                src={`../src/assets/icons/${tech.icon}`} 
+                                src={`icons/${tech.icon}`} 
                                 alt={tech.nombre} 
                             />
                             <span>{tech.nombre}</span>
@@ -69,7 +69,7 @@ function About_Esp() {
                     {herramientas.map((tool, index) => (
                         <div key={index} className="tech-item">
                             <img 
-                                src={`../src/assets/icons/${tool.icon}`} 
+                                src={`icons/${tool.icon}`} 
                                 alt={tool.nombre} 
                             />
                             <span>{tool.nombre}</span>

@@ -21,7 +21,7 @@ function About_Eng() {
         <div className='about-me-card'>
             <div className="profile-section">
                 <div className="profile-image">
-                    <img src="../../src/assets/me.jpg" alt="Oscar Rojas" />
+                    <img src="assets/me.jpg" alt="Oscar Rojas" />
                 </div>
                 <div className="profile-info">
                     <h3>Data about me</h3>
@@ -47,7 +47,7 @@ function About_Eng() {
                     {technologies.map((tech, index) => (
                         <div key={index} className="tech-item">
                             <img 
-                                src={`../src/assets/icons/${tech.icon}`} 
+                                src={`icons/${tech.icon}`} 
                                 alt={tech.name} 
                             />
                             <span>{tech.name}</span>
@@ -69,7 +69,7 @@ function About_Eng() {
                     {tools.map((tool, index) => (
                         <div key={index} className="tech-item">
                             <img 
-                                src={`../src/assets/icons/${tool.icon}`} 
+                                src={`icons/${tool.icon}`} 
                                 alt={tool.name} 
                             />
                             <span>{tool.name}</span>

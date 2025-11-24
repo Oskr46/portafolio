@@ -27,7 +27,7 @@ function About_Eng() {
                     <h3>Data about me</h3>
                     <p>
                         My name is Oscar Rojas. I'm 20 years old and from Venezuela. I'm currently studying 
-                        Computer Engineering at Gran Mariscal de Ayacucho University, where I'm in my 6th semester.
+                        Computer Engineering at Gran Mariscal de Ayacucho University, where I'm in my 7th semester.
                     </p>
                     <p>
                         Throughout my academic journey, I've worked on various projects for university assignments.

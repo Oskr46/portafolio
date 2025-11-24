@@ -21,7 +21,7 @@ function About_Eng() {
         <div className='about-me-card'>
             <div className="profile-section">
                 <div className="profile-image">
-                    <img src="../src/assets/me.jpg" alt="Oscar Rojas" />
+                    <img src="../../src/assets/me.jpg" alt="Oscar Rojas" />
                 </div>
                 <div className="profile-info">
                     <h3>Data about me</h3>
